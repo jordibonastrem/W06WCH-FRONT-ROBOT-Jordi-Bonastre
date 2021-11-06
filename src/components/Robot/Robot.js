@@ -2,11 +2,7 @@ import React from "react";
 
 import ".Robot.css";
 
-const Robot = ({
-  name,
-  imgSrc,
-  caracteristics: { velocity, resistence, dateOfCreation },
-}) => {
+const Robot = ({ name, imgSrc, velocity, resistence, dateOfCreation }) => {
   return (
     <div class="card mycard">
       <img class="card-img-top" src={imgSrc} alt="robot"></img>
