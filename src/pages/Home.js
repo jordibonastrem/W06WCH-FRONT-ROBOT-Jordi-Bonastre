@@ -1,7 +1,4 @@
-import "./App.css";
-import "bootstrap/dist/css/bootstrap.min.css";
-import Home from "./pages/Home";
-
+import RobotsList from "../components/RobotList/RobotsList";
 const robots = [
   {
     id: 1,
@@ -81,8 +78,9 @@ const robots = [
     },
   },
 ];
-function App() {
-  return <Home></Home>;
-}
 
-export default App;
+const Home = () => {
+  return <RobotsList robots={robots}></RobotsList>;
+};
+
+export default Home;
