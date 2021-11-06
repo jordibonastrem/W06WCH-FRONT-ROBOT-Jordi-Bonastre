@@ -8,11 +8,6 @@ const RobotsList = ({ robots }) => {
     <div className="list">
       <h2>Robots List</h2>
       <ul>
-        {/* {robots.map(({ _id, name, img, caracteristics }) => {
-          console.log({ caracteristics });
-          // const velocity = caracteristics.velocity;
-          // console.log(_id, name, img, velocity);
-        })} */}
         {robots.map(({ _id, name, img, caracteristics }) => {
           return (
             <Robot
