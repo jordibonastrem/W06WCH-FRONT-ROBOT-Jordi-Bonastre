@@ -10,12 +10,14 @@ const RobotsList = ({ robots }) => {
       <ul>
         {robots.map(
           ({
+            id,
             name,
             image,
             caracteristics: { velocity, resistence, dateOfCreation },
           }) => {
             return (
               <Robot
+                key={id}
                 name={name}
                 image={image}
                 velocity={velocity}

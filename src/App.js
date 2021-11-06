@@ -1,10 +1,10 @@
-import logo from "./logo.svg";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import RobotsList from "./components/RobotList/RobotsList";
 
 const robots = [
   {
+    id: 1,
     name: "Sophia",
     image:
       "https://grupoadd.es/wp-content/uploads/2019/08/Robot-Sophia-3-Grupo-ADD.jpg",
@@ -15,6 +15,7 @@ const robots = [
     },
   },
   {
+    id: 2,
     name: "Sophia",
     image:
       "https://grupoadd.es/wp-content/uploads/2019/08/Robot-Sophia-3-Grupo-ADD.jpg",
@@ -25,6 +26,7 @@ const robots = [
     },
   },
   {
+    id: 3,
     name: "Sophia",
     image:
       "https://grupoadd.es/wp-content/uploads/2019/08/Robot-Sophia-3-Grupo-ADD.jpg",
@@ -35,6 +37,7 @@ const robots = [
     },
   },
   {
+    id: 4,
     name: "Sophia",
     image:
       "https://grupoadd.es/wp-content/uploads/2019/08/Robot-Sophia-3-Grupo-ADD.jpg",
@@ -45,6 +48,7 @@ const robots = [
     },
   },
   {
+    id: 5,
     name: "Sophia",
     image:
       "https://grupoadd.es/wp-content/uploads/2019/08/Robot-Sophia-3-Grupo-ADD.jpg",
@@ -55,6 +59,7 @@ const robots = [
     },
   },
   {
+    id: 6,
     name: "Sophia",
     image:
       "https://grupoadd.es/wp-content/uploads/2019/08/Robot-Sophia-3-Grupo-ADD.jpg",
@@ -65,6 +70,7 @@ const robots = [
     },
   },
   {
+    id: 7,
     name: "Sophia",
     image:
       "https://grupoadd.es/wp-content/uploads/2019/08/Robot-Sophia-3-Grupo-ADD.jpg",
