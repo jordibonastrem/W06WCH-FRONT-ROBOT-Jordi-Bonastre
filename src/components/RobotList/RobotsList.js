@@ -8,15 +8,8 @@ const RobotsList = ({ robots }) => {
     <div className="list">
       <h2>Robots List</h2>
       <ul>
-        {robots.map(({ _id, name, img, caracteristics }) => {
-          return (
-            <Robot
-              key={_id}
-              name={name}
-              image={img}
-              caracteristics={caracteristics}
-            ></Robot>
-          );
+        {robots.map((robot) => {
+          return <Robot key={robot._id} robot={robot}></Robot>;
         })}
       </ul>
     </div>
