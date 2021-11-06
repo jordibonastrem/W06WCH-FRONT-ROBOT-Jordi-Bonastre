@@ -4,14 +4,15 @@ import { loadRobotsThunk } from "../redux/thunks/Thunks";
 
 const useRobots = () => {
   const dispatch = useDispatch();
-  const tasks = useSelector((store) => store.tasks);
+  const robots = useSelector((store) => store.robots);
+  console.log("arrived customHooke ", robots);
 
   const loadRobots = useCallback(() => {
     dispatch(loadRobotsThunk());
   }, [dispatch]);
-
+  console.log("arrived customHooke ", robots);
   return {
-    tasks,
+    robots,
     loadRobots,
   };
 };
