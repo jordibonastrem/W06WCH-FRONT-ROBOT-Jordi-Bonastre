@@ -1,11 +1,11 @@
-import { image } from "faker";
 import React from "react";
 
 import Robot from "../Robot/Robot";
+import "./RobotsList.css";
 
-const RobotList = ({ robots }) => {
+const RobotsList = ({ robots }) => {
   return (
-    <div>
+    <div className="list">
       <h2>Robots List</h2>
       <ul>
         {robots.map(
@@ -29,3 +29,5 @@ const RobotList = ({ robots }) => {
     </div>
   );
 };
+
+export default RobotsList;

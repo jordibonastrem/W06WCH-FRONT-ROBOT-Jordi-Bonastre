@@ -1,11 +1,11 @@
 import React from "react";
 
-import ".Robot.css";
+import "./Robot.css";
 
-const Robot = ({ name, imgSrc, velocity, resistence, dateOfCreation }) => {
+const Robot = ({ name, image, velocity, resistence, dateOfCreation }) => {
   return (
     <div class="card mycard">
-      <img class="card-img-top" src={imgSrc} alt="robot"></img>
+      <img class="card-img-top" src={image} alt="robot"></img>
       <div class="card-body">
         <h5 class="card-title">{name}</h5>
         <p class="card-text">VELOCITY:{velocity}</p>
