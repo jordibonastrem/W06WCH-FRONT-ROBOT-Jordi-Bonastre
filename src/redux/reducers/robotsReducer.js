@@ -16,6 +16,7 @@ const robotReducer = (robots = [], action) => {
     default:
     // throw new Error("action non existent.");
   }
+  console.log("arrived reducer ", newTaskState);
   return newTaskState;
 };
 
