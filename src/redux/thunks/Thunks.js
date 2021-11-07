@@ -24,7 +24,6 @@ export const deleteRobotsThunk = (id) => async (dispatch) => {
 };
 
 export const createRobotThunk = (robot) => {
-  console.log(robot);
   return async (dispatch) => {
     const response = await fetch(`${process.env.REACT_APP_API_URL}/create`, {
       method: "POST",

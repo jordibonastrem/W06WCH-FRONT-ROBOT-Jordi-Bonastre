@@ -15,7 +15,6 @@ const useRobots = () => {
   }, [dispatch]);
 
   const deleteRobot = (robot) => {
-    console.log(robot._id);
     dispatch(deleteRobotsThunk(robot._id));
   };
 
