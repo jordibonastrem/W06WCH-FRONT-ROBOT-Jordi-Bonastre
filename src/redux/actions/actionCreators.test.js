@@ -39,3 +39,19 @@ describe("Given a create actionCreator", () => {
     });
   });
 });
+
+describe("Given a update actionCreator", () => {
+  describe("When it receives a robot", () => {
+    test("Then it should return a update type action with the robot recieved", () => {
+      const modifiedRobot = getRandomRobot();
+      const expectedAction = {
+        type: actionTypes.updateRobotAction,
+        robot: modifiedRobot,
+      };
+
+      const actionResult = updateRobotAction(modifiedRobot);
+
+      expect(actionResult).toEqual(expectedAction);
+    });
+  });
+});
