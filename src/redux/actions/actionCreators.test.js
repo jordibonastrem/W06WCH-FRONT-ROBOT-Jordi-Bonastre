@@ -55,3 +55,19 @@ describe("Given a update actionCreator", () => {
     });
   });
 });
+
+describe("Given a delete actionCreator", () => {
+  describe("When it receives a robot", () => {
+    test("Then it should return a delete type action with the id recieved", () => {
+      const id = 1;
+      const expectedAction = {
+        type: actionTypes.deleteRobotAction,
+        id,
+      };
+
+      const actionResult = deleteRobotAction(id);
+
+      expect(actionResult).toEqual(expectedAction);
+    });
+  });
+});
