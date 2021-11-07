@@ -8,7 +8,8 @@ const Home = () => {
   useEffect(() => {
     loadRobots();
   }, [loadRobots]);
-
+  console.log(robots);
+  // // return <div>ffd</div>;
   return <RobotsList robots={robots}></RobotsList>;
 };
 
