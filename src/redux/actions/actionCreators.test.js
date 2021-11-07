@@ -13,11 +13,27 @@ describe("Given a load actionCreator", () => {
     test("Then it should return a load type action with the robots recieved", () => {
       const robotsList = getRandomRobots();
       const expectedAction = {
-        type: actionTypes.loadRobots,
+        type: actionTypes.loadRobotsAction,
         robots: robotsList,
       };
 
       const actionResult = loadRobotsAction(robotsList);
+
+      expect(actionResult).toEqual(expectedAction);
+    });
+  });
+});
+
+describe("Given a create actionCreator", () => {
+  describe("When it receives a robot", () => {
+    test("Then it should return a create type action with the robot recieved", () => {
+      const newRobot = getRandomRobot();
+      const expectedAction = {
+        type: actionTypes.createRobotAction,
+        robot: newRobot,
+      };
+
+      const actionResult = createRobotAction(newRobot);
 
       expect(actionResult).toEqual(expectedAction);
     });
