@@ -42,19 +42,6 @@ const Form = () => {
     }
   };
 
-  // const checkIfEmptyFields = () => {
-  //   if (
-  //     robotData.name === "" ||
-  //     robotData.img === "" ||
-  //     robotData.caracteristics.velocity === "" ||
-  //     robotData.caracteristics.resistence === "" ||
-  //     robotData.dateOfCreation === ""
-  //   ) {
-  //     return true;
-  //   } else {
-  //     return false;
-  //   }
-  // };
   const resetForm = () => {
     setRobotData(initialData);
   };
@@ -80,87 +67,89 @@ const Form = () => {
   };
 
   return (
-    <form onSubmit={onCreateRobot}>
-      <div className="form-group">
-        <label htmlFor="name">Robot Name</label>
-        <input
-          type="name"
-          className="form-control"
-          id="name"
-          value={robotData.name}
-          placeholder="Enter Robot name"
-          onChange={changeData}
-        />
-      </div>
-      <div className="form-group">
-        <label htmlFor="img">Enter image link</label>
-        <input
-          type="text"
-          className="form-control"
-          id="img"
-          value={robotData.img}
-          placeholder="Enter image link"
-          onChange={changeData}
-        />
-      </div>
-      <div className="form-group">
-        <label htmlFor="velocity">Velocity</label>
-        <select
-          className="form-control"
-          id="velocity"
-          value={robotData.caracteristics.velocity}
-          onChange={changeData}
-        >
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5</option>
-          <option>6</option>
-          <option>7</option>
-          <option>8</option>
-          <option>9</option>
-          <option>10</option>
-        </select>
-      </div>
-      <div className="form-group">
-        <label htmlFor="resistence">Resistence</label>
-        <select
-          className="form-control"
-          id="resistence"
-          value={robotData.caracteristics.resistence}
-          onChange={changeData}
-        >
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5</option>
-          <option>6</option>
-          <option>7</option>
-          <option>8</option>
-          <option>9</option>
-          <option>10</option>
-        </select>
-      </div>
+    <div className="form-style">
+      <form onSubmit={onCreateRobot}>
+        <div className="form-group">
+          <label htmlFor="name">Robot Name</label>
+          <input
+            type="name"
+            className="form-control"
+            id="name"
+            value={robotData.name}
+            placeholder="Enter Robot name"
+            onChange={changeData}
+          />
+        </div>
+        <div className="form-group">
+          <label htmlFor="img">Enter image link</label>
+          <input
+            type="text"
+            className="form-control"
+            id="img"
+            value={robotData.img}
+            placeholder="Enter image link"
+            onChange={changeData}
+          />
+        </div>
+        <div className="form-group">
+          <label htmlFor="velocity">Velocity</label>
+          <select
+            className="form-control"
+            id="velocity"
+            value={robotData.caracteristics.velocity}
+            onChange={changeData}
+          >
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+          </select>
+        </div>
+        <div className="form-group">
+          <label htmlFor="resistence">Resistence</label>
+          <select
+            className="form-control"
+            id="resistence"
+            value={robotData.caracteristics.resistence}
+            onChange={changeData}
+          >
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+          </select>
+        </div>
 
-      <label htmlFor="dateOfCreation">Creation date:</label>
-      <input
-        onChange={changeData}
-        type="date"
-        className="form-control form-control-sm"
-        id="dateOfCreation"
-        placeholder="Creation date"
-        value={robotData.caracteristics.dateOfCreation}
-      ></input>
-      <button
-        type="submit"
-        className="btn btn-primary"
-        disabled={buttonDisabled}
-      >
-        Create Robot
-      </button>
-    </form>
+        <label htmlFor="dateOfCreation">Creation date:</label>
+        <input
+          onChange={changeData}
+          type="date"
+          className="form-control form-control-sm"
+          id="dateOfCreation"
+          placeholder="Creation date"
+          value={robotData.caracteristics.dateOfCreation}
+        ></input>
+        <button
+          type="submit"
+          className="btn btn-primary"
+          disabled={buttonDisabled}
+        >
+          Create Robot
+        </button>
+      </form>
+    </div>
   );
 };
 

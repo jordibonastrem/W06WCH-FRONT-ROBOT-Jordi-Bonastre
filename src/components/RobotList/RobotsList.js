@@ -12,9 +12,8 @@ const RobotsList = ({ robots }) => {
     deleteRobot(robotToDelete);
   };
   return (
-    <div className="list">
-      <h2>Robots List</h2>
-      <ul>
+    <div>
+      <ul className="container-card">
         {robots.map((robot) => {
           return (
             <Robot
@@ -23,7 +22,6 @@ const RobotsList = ({ robots }) => {
               actionOnClick={() => handleOnclick(robot._id)}
             ></Robot>
           );
-          // console.log(robot._id, robot);
         })}
       </ul>
     </div>

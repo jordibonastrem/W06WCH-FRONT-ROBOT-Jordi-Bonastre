@@ -1,0 +1,10 @@
+.container-card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  margin: 20px 30px;
+}
+.title {
+  margin: 20px 30px;
+}
