@@ -3,13 +3,13 @@ import actionTypes from "../actions/actionTypes";
 const robotReducer = (robots = [], action) => {
   let newTaskState = robots;
   switch (action.type) {
-    case actionTypes.loadRobots:
+    case actionTypes.loadRobotsAction:
       newTaskState = [...action.robots];
       break;
-    case actionTypes.createRobots:
+    case actionTypes.createRobotAction:
       newTaskState = [...robots, action.task];
       break;
-    case actionTypes.deleteTask:
+    case actionTypes.deleteRobotAction:
       newTaskState = robots.filter((robot) => robot.id !== action.id);
       break;
 
