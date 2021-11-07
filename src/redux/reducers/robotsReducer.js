@@ -1,23 +1,22 @@
 import actionTypes from "../actions/actionTypes";
 
 const robotReducer = (robots = [], action) => {
-  let newTaskState = robots;
+  let newRobotsState = robots;
   switch (action.type) {
     case actionTypes.loadRobotsAction:
-      newTaskState = [...action.robots];
+      newRobotsState = [...action.robots];
       break;
     case actionTypes.createRobotAction:
-      newTaskState = [...robots, action.task];
+      newRobotsState = [...robots, action.robot];
       break;
     case actionTypes.deleteRobotAction:
-      newTaskState = robots.filter((robot) => robot.id !== action.id);
+      newRobotsState = robots.filter((robot) => robot._id !== action.id);
       break;
 
     default:
     // throw new Error("action non existent.");
   }
-  console.log("arrived reducer ", newTaskState);
-  return newTaskState;
+  return newRobotsState;
 };
 
 export default robotReducer;
