@@ -1,8 +1,8 @@
 const actionTypes = {
-  loadRobots: "LOAD_ROBOTS",
-  deleteRobots: "DELETE_ROBOT",
-  createRobots: "CREATE_ROBOT",
-  updateRobots: "UPDATE_ROBOT",
+  loadRobotsAction: "LOAD_ROBOTS",
+  deleteRobotAction: "DELETE_ROBOT",
+  createRobotAction: "CREATE_ROBOT",
+  updateRobotAction: "UPDATE_ROBOT",
 };
 
 export default actionTypes;

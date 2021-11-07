@@ -1,7 +1,7 @@
 import actionTypes from "./actionTypes";
 
 export const loadRobotsAction = (robots) => ({
-  type: actionTypes.loadRobots,
+  type: actionTypes.loadRobotsAction,
   robots,
 });
 
