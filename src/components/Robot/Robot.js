@@ -8,6 +8,7 @@ const Robot = ({
     img,
     caracteristics: { velocity, resistence, dateOfCreation },
   },
+  actionOnClick,
 }) => {
   console.log(dateOfCreation);
   return (
@@ -18,9 +19,7 @@ const Robot = ({
         <p className="card-text">VELOCITY:{velocity}</p>
         <p className="card-text">RESISTENCE:{resistence}</p>
         <p className="card-text">DATE OF CREATION:{dateOfCreation.$date}</p>
-        <a href="#" className="btn btn-primary">
-          Go somewhere
-        </a>
+        <button onClick={actionOnClick}>Delete</button>
       </div>
     </div>
   );
