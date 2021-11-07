@@ -1,4 +1,3 @@
-import { datatype } from "faker";
 import { lorem } from "faker/locale/es";
 import { Factory } from "fishery";
 

@@ -14,7 +14,6 @@ const robotReducer = (robots = [], action) => {
       break;
 
     default:
-    // throw new Error("action non existent.");
   }
   return newRobotsState;
 };
