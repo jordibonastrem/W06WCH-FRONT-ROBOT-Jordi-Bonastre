@@ -1,18 +1,23 @@
 import { useCallback } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { loadRobotsThunk } from "../redux/thunks/Thunks";
+import { loadRobotsThunk, deleteRobotsThunk } from "../redux/thunks/Thunks";
 
 const useRobots = () => {
   const dispatch = useDispatch();
   const robots = useSelector((store) => store.robots);
+
   const loadRobots = useCallback(() => {
     dispatch(loadRobotsThunk());
   }, [dispatch]);
-  console.log("custom hooke robots");
-  console.log(robots);
+
+  const deleteRobot = (robot) => {
+    console.log(robot._id);
+    dispatch(deleteRobotsThunk(robot._id));
+  };
   return {
     robots,
     loadRobots,
+    deleteRobot,
   };
 };
 
