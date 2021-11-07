@@ -19,7 +19,9 @@ const Robot = ({
         <p className="card-text">VELOCITY:{velocity}</p>
         <p className="card-text">RESISTENCE:{resistence}</p>
         <p className="card-text">DATE OF CREATION:{dateOfCreation.$date}</p>
-        <button onClick={actionOnClick}>Delete</button>
+        <button className="btn btn-danger" onClick={actionOnClick}>
+          Delete
+        </button>
       </div>
     </div>
   );
