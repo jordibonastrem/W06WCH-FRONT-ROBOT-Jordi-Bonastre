@@ -4,7 +4,7 @@ import {
   loadRobotsThunk,
   deleteRobotsThunk,
   createRobotThunk,
-} from "../redux/thunks/Thunks";
+} from "../redux/thunks/RobotsThunks";
 
 const useRobots = () => {
   const dispatch = useDispatch();
