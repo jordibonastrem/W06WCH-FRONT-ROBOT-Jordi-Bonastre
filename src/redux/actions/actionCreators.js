@@ -20,7 +20,17 @@ export const updateRobotAction = (robot) => ({
   robot,
 });
 
-export const userLoginAction = (user) => ({
+export const loginUserAction = (user) => ({
   type: actionTypes.loginUser,
+  user,
+});
+
+export const logoutUserAction = (user) => ({
+  type: actionTypes.logoutUser,
+  user,
+});
+
+export const userIsLoggedAction = (user) => ({
+  type: actionTypes.userIsLogged,
   user,
 });
